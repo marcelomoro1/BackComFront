@@ -28,7 +28,7 @@ public class ProdutoController {
     }
 
     @PostMapping
-    public Produto save(Produto produto) {
+    public Produto save(@RequestBody Produto produto) {
         return produtoRepository.save(produto);
     }
 
